@@ -1,0 +1,365 @@
+/* styles.css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: black;
+    z-index: 10;       
+}
+#pnglogo {
+    max-height: 20%;
+    max-width: 20%;
+}
+.navig {
+    position:absolute;
+    top: 10%;
+    right: 5%;
+    padding: 10px;
+    z-index: 10;
+}
+.navig a {
+    padding: 10px;
+    color: rgb(213, 144, 7);
+    text-decoration: firebrick;
+}
+
+.navig a:hover {
+    color: firebrick;
+}
+.navig a:active {
+  color: firebrick;
+}
+.login {
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center;  /*Center align vertically */
+    position: absolute;
+    text-align: center;
+    padding: 1px;
+    top: 5%;
+    right: 5%;
+    height: 35px;
+    width: 75px;
+    border-radius: 10px;
+    background-color: firebrick;
+    z-index: 11;
+}
+
+.login a {
+    margin: 0;
+    text-decoration: none; /* Remove underline from the link */
+    color: white; /* Set the link color to match the parent */
+    z-index: 11;
+}
+.login a:hover {
+    background-color: firebrick;
+    color: orange;
+}
+
+.back-vid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.5;
+  z-index: -10;
+}
+@media (min-aspect-ratio:16/9){
+    .back-vid{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .back-vid{
+        width: auto;
+        height: 100%;
+    }
+}
+.container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  width: 100%;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  overflow-x: hidden;
+}
+.text-cont {
+  display: flex;
+  padding-left: 50px;
+  color: #ff773d;
+  font-size: 18px;
+  text-align: left;
+  margin-right: 50px;
+  /*max-width: 600px;*/
+}
+.heading {
+  color: firebrick;
+  position: relative;
+  text-align: left;
+  left: 30px;
+}
+.image {
+  height: 400px;
+  float: left;
+  place-content: left;
+}
+.one {
+  height: 100vh;
+}
+.two {
+  background-color: black;
+}
+
+.three {
+  background-color: black;
+  text-align: right;
+}
+.four {
+  background-color: black;
+  text-align: right;
+}
+.five {
+  background-color: black;
+  text-align: right;
+}
+.six {
+  background-color: black;
+  text-align: right;
+}
+.seven {
+  background-color: black;
+  text-align: right;
+}
+.eight {
+  background-color: black;
+  text-align: right;
+}
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.company {
+  position: relative;
+  text-align: right;
+}
+.name {
+    font-size: 95px;
+    color: red;
+    font-weight: 600;
+    white-space: nowrap;
+    margin: 20px;
+    text-align: left;
+    position: relative;
+    left: 50%;
+}
+.moto {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0px;
+    top: 125px;
+    right: 0;
+    margin:0;
+    left: 100%;
+}
+.intro {
+  color: #ff773d;
+  font-size: 18px;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  top: 175px;
+  right: 50%;
+}
+
+/* ... (existing styles) ... */
+
+/* Center the "Contact Us" form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 80%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .contact-form h1 {
+    text-align: center;
+    color: firebrick;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 30%;
+  }
+  
+  input,
+  .contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; /* White input background color */
+  }
+  
+  .contact-form textarea {
+    resize: vertical; /* Allow vertical resizing for textarea */
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: #ff944d; /* Lighter orange button color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ff773d; /* Darker orange button color on hover */
+  }
+  .con-content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     color: #fff;
+    padding: 20px;
+     border-radius: 10px;
+    z-index: 1;
+  }
+  .con-content .name {
+    font-size: 50px;
+    color: red;
+    font-weight: 600;
+    white-space: nowrap;
+    margin: 10px;
+  }
+  .con-content .moto {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+  }
+  /* ... (existing styles) ... */
+  .ser-name {
+    font-size: 95px;
+    color: red;
+    font-weight: 600;
+    white-space: nowrap;
+    margin: 20px;
+    left: 30%;
+    text-align: center;
+  }
+  .ser-intro {
+    color: #ff773d;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+  }
+  .eight p {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .ab {
+    background-color: black;
+    text-align: right;
+    text-align: center;
+    right: 50%;
+  }
+  .ab .heading {
+    color: firebrick;
+    position: relative;
+    text-align: left;
+    left: 20% ;
+    max-width: 600px;
+  }
+  .ab .text-cont {
+    margin-left: 300px;
+    margin-right: 300px;
+
+  }
+  .contactinfo { 
+    align-items: center;
+    align-items: center;
+  }
+  .contactinff {
+    color: #ff773d;
+    margin-left: 300px;
+    margin-right: 300px;
+    max-width: 800px;
+  }
+  .contac {
+    color: white;
+    margin-left: 300px;
+    margin-right: 300px;
+    white-space: nowrap;
+  }
+  .contac h4 {
+    color: firebrick;
+  }
+  .contac .info {
+    margin-left: 50px;
+  }

@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:black;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: black;
+  z-index: 10;       
+}
+#pnglogo {
+  max-height: 20%;
+  max-width: 20%;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  width: 300px;
+  align-items: center;
+  position: absolute;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: firebrick;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: orange;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 2px solid firebrick;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: firebrick;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+input[type="submit"]:hover {
+  color: orange;
+}
+
+.back-vid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.5;
+  z-index: -10;
+}
+
+@media (min-aspect-ratio:16/9){
+    .back-vid{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .back-vid{
+        width: auto;
+        height: 100%;
+    }
+  }
+  .signup-container {
+    width: 300px;
+    align-items: center;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .forget-password-container {
+    width: 300px;
+    align-items: center;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: orange;
+  }
+  .signupa {
+    width: 100%;
+    background-color: orange;
+    color: #fff;
+    margin-top: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .signupa:hover {
+    color: firebrick;
+  }
+
+  .home h2 {
+    color: firebrick;
+  }
+  .appointment {
+    width: 300px;
+    align-items: center;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .order-parts {
+    width: 300px;
+    align-items: center;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .car-ride {
+    width: 300px;
+    align-items: center;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .drift-track {
+    width: 300px;
+    align-items: center;x
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .home section {
+    height: 100vh;
+    margin-top: 50px;
+  }
