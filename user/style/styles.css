@@ -154,7 +154,7 @@ input[type="submit"]:hover {
   }
   .drift-track {
     width: 300px;
-    align-items: center;x
+    align-items: center;
     position: absolute;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
