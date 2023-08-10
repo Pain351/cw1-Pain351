@@ -93,3 +93,29 @@ function handleFormSelectionChange() {
 bookingTypeRadios.forEach(radio => {
   radio.addEventListener('change', handleFormSelectionChange);
 });
+function handleSubmit(event) {
+  event.preventDefault(); // Prevent the default form submission
+  
+  // Get the selected booking type
+  const selectedValue = document.querySelector('input[name="booking_type"]:checked').value;
+  
+  // Collect form data based on selected booking type
+  const formData = new FormData(document.querySelector('form'));
+  
+  // Send the form data to the server using AJAX or Fetch API
+  fetch('../php/process_form.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Process the response from the server, such as showing a success message
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
+
+// Attach the handleSubmit function to the form's submit event
+document.querySelector('form').addEventListener('submit', handleSubmit);

@@ -162,3 +162,27 @@ input[type="submit"]:hover {
     height: 100vh;
     margin-top: 50px;
   }
+  .login {
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center;  /*Center align vertically */
+    position: absolute;
+    text-align: center;
+    padding: 1px;
+    top: 5%;
+    right: 5%;
+    height: 35px;
+    width: 75px;
+    border-radius: 10px;
+    z-index: 11;
+}
+
+.login a {
+    margin: 0;
+    text-decoration: none; /* Remove underline from the link */
+    color: orange; /* Set the link color to match the parent */
+    z-index: 11;
+}
+.login a:hover {
+    color: firebrick;
+}
